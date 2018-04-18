@@ -12,6 +12,8 @@ import org.slf4j.LoggerFactory;
 import java.io.IOException;
 import java.io.Serializable;
 
+import javax.annotation.Nonnull;
+
 import hudson.Extension;
 import hudson.model.Action;
 import hudson.model.Describable;
@@ -100,6 +102,7 @@ public class SnowGlobeAction implements Action, Serializable,
    */
   @Extension
   public static class DescriptorImpl extends Descriptor<SnowGlobeAction> {
+    @Nonnull
     public String getDisplayName() {
       return "SnowGlobe";
     }

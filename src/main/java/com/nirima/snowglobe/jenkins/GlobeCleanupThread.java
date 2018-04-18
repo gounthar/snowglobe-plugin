@@ -16,12 +16,16 @@ import java.util.List;
 
 import java.util.stream.Collectors;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import hudson.Extension;
 import hudson.model.AsyncPeriodicWork;
 import hudson.model.TaskListener;
 
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
 @Extension
 @Symbol({"snowglobeCleanup"})
+@SuppressFBWarnings("NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD")
 public class GlobeCleanupThread extends AsyncPeriodicWork {
 
   private static final Logger log = LoggerFactory.getLogger(GlobeCleanupThread.class);
@@ -46,6 +50,7 @@ public class GlobeCleanupThread extends AsyncPeriodicWork {
 
     deleteGlobesBeyondTotalNumber();
   }
+
 
   private void deleteGlobesBeyondTotalNumber() throws IOException {
     SnowGlobePluginConfiguration config = SnowGlobePluginConfiguration.get();

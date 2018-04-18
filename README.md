@@ -14,6 +14,19 @@ snowglobe_clone createAction: true, sourceId: 'ci-template', targetId: 'new-glob
 ```
 
 ### Set Variables
+
+Variables are specified in TOML format, e.g:
+
+```
+
+key="value"
+
+[settings]
+x="hello"
+
+```
+
+Call: 
 ```groovy
 snowglobe_set_variables globeId: 'my-globe', variables: 'key="value"'
 ```

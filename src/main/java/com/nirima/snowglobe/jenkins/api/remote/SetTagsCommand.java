@@ -38,7 +38,7 @@ public class SetTagsCommand extends GlobeCommand<Void> {
 
       final byte[] data = out.toByteArray();
 
-      method.setEntity(new StringEntity(new String(data), "UTF-8"));
+      method.setEntity(new StringEntity(new String(data, "UTF-8"), "UTF-8"));
       final HttpResponse response =  client.execute(method, getContext());
 
     }

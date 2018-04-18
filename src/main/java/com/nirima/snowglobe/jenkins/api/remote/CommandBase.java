@@ -23,7 +23,7 @@ public abstract class CommandBase<T> {
   }
 
   HttpContext getContext() {
-    HttpContext context = new BasicHttpContext();;
+    HttpContext context = new BasicHttpContext();
     return context;
   }
 
