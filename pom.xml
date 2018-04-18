@@ -31,7 +31,7 @@
     </properties>
     <name>SnowGlobe Plugin</name>
     <description>Control SnowGlobe servers from within Jenkins builds</description>
-    <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
+    <url>https://wiki.jenkins-ci.org/display/JENKINS/SnowGlobe+Plugin</url>
     <!-- The default licence for Jenkins OSS Plugins is MIT. Substitute for the applicable one if needed. -->
     <licenses>
         <license>
